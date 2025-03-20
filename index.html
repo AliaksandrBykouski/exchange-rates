@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exchange Rates App</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<a style="display: none" href="https://www.exchangerate-api.com">Rates By Exchange Rate API</a>
+<div class="container">
+  <img src="public/img/exchange-money-svgrepo-com.svg" alt="logo" class="logo">
+  <h1 class="title">Exchange rates</h1>
+  <section class="info-container">
+    <div class="controls-wrapper">
+      <select name="firstSelect" data-first-select class="select-control"></select>
+      <button class="swap-btn" data-swap-btn>swap</button>
+      <select name="secondSelect" data-second-select class="select-control"></select>
+    </div>
+
+    <div class="controls-wrapper">
+      <input type="number"  class="input-control" data-first-input>
+      <span>=</span>
+      <input type="number" class="input-control" data-second-input>
+    </div>
+    <p data-comparison-info></p>
+  </section>
+</div>
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
